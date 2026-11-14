@@ -1,0 +1,13 @@
+# Allow-list: ignore everything, then re-include only what belongs in the repo.
+# (Keeps game data, build output and the exe out of git. The exe goes in GitHub Releases.)
+*
+
+!.gitignore
+!README.md
+!LICENSE
+!requirements.txt
+!PrincessMakerTool.py
+!build.bat
+
+# If you add a new file to the repo later (an icon, a screenshot, ...),
+# add a matching "!filename" line above, otherwise git will ignore it.
